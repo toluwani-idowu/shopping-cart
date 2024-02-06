@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Component/Navbar.js/index.js";
+import {Cart} from "./Pages/Cart/Cart.js";
+import {Shop} from './Pages/Shop/Shop.js'
+import { ShopContextProvider } from "./Context/Shop-Context.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <ShopContextProvider>
+      <Router>
+      <Navbar />
+      <h1 className="body">House of wanny</h1>
+
+        <Routes>
+          <Route path="/" element={<Shop/>} />
+          <Route path="/cart"  element={<Cart/>}/>
+        </Routes>
+      </Router> 
+      </ShopContextProvider>
     </div>
+    
   );
 }
 

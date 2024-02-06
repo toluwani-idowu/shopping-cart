@@ -1,0 +1,16 @@
+.navBar {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+  text-decoration: underline;
+  align-items: center;
+  justify-content: right;
+  text-align: center;
+  margin: 0;
+  padding: 0px 20px;
+  color: white;
+}
+
+  
