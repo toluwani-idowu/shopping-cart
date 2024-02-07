@@ -5,6 +5,7 @@
   flex-direction: row;
   gap: 3vh;
   text-decoration: underline;
+  font: italic;
   align-items: center;
   justify-content: right;
   text-align: center;
@@ -12,5 +13,15 @@
   padding: 0px 20px;
   color: white;
 }
+.shop{
+  color: white;
 
+}
+
+.cartIcon{
+  width: 34px;
+  height: 34px;
+  border-radius: 20px;
+  /* background-color:brown; */
+}
   

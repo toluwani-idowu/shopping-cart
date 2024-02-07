@@ -6,7 +6,6 @@ import { Product } from "./Product";
 export const Shop = () => {
   return (
     <div className="shopPage">
-      <div className="shopTitle"> Welcome </div>
       <div className='productContainer' >
         {PRODUCTS.map((product) => (
            <Product data={product} />
